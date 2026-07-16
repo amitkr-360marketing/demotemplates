@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slanging Ink Tattoo | Custom Tattoo Studio in Santa Barbara</title>
+<meta name="description" content="Slanging Ink — custom tattoo studio in Santa Barbara. Black & grey, fine line, traditional and cover-ups. View the portfolio and book a consultation.">
+<link rel="canonical" href="https://www.slanginginktattoo.com/">
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Slanging Ink Tattoo — Santa Barbara">
+<meta property="og:description" content="Custom tattoos. Real craft. Book a consultation.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0D0D0D">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TattooParlor",
+  "name": "Slanging Ink Tattoo",
+  "description": "Custom tattoo studio in Santa Barbara, California — black & grey, fine line, traditional, cover-ups.",
+  "address": {"@type": "PostalAddress","addressLocality": "Santa Barbara","addressRegion": "CA","addressCountry": "US"},
+  "priceRange": "$$$"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@1,9..144,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#0D0D0D; --cream2:#161616;
+  --terra:#D6FF3F; --terra-dark:#B8E020;
+  --green:#F2F0EA; --green-soft:#C9C6BC;
+  --gold:#FF5C39; --ink:#F2F0EA; --ink-soft:#8F8D85;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.disp{font-family:'Anton',Impact,sans-serif;font-weight:400;letter-spacing:.5px}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:18px 36px;font-weight:700;font-size:15px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;transition:all .15s}
+.btn-acid{background:var(--terra);color:#0D0D0D;clip-path:polygon(0 0,100% 0,96% 100%,0 100%)}
+.btn-acid:hover{background:var(--terra-dark)}
+.btn-out{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.btn-out:hover{background:var(--ink);color:#0D0D0D}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* nav */
+.nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid #232323}
+.logo{font-family:'Anton',sans-serif;font-size:22px;letter-spacing:1px}
+.logo span{color:var(--terra)}
+.nv{display:flex;gap:28px;font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:600}
+.nv a{text-decoration:none;color:var(--ink-soft)}
+.nv a:hover{color:var(--terra)}
+.nv .bk{color:var(--terra)}
+
+/* hero */
+.hero{padding:80px 0 0;position:relative}
+.hero h1{font-family:'Anton',sans-serif;font-size:clamp(64px,11vw,150px);line-height:.95;text-transform:uppercase}
+.hero h1 .row{display:block}
+.hero h1 .outline{color:transparent;-webkit-text-stroke:2px var(--ink)}
+.hero h1 .acid{color:var(--terra)}
+.hero-sub{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-top:36px;flex-wrap:wrap}
+.hero-sub p{max-width:440px;font-size:17px;color:var(--ink-soft)}
+.hero-sub .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-meta{display:flex;gap:36px;margin-top:56px;padding:26px 0;border-top:1px solid #232323;flex-wrap:wrap}
+.hm b{font-family:'Anton',sans-serif;font-size:26px;color:var(--terra);display:block}
+.hm span{font-size:13px;color:var(--ink-soft);letter-spacing:1px;text-transform:uppercase}
+
+/* marquee */
+.mq{background:var(--terra);color:#0D0D0D;overflow:hidden;white-space:nowrap;padding:14px 0;transform:rotate(-1.2deg);margin:56px -20px;width:calc(100% + 40px)}
+.mq .track{display:inline-block;animation:mv 24s linear infinite;font-family:'Anton',sans-serif;font-size:18px;letter-spacing:2px;text-transform:uppercase}
+.mq span{margin:0 24px}
+@keyframes mv{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* work grid */
+section{padding:90px 0}
+.k{font-size:12px;letter-spacing:4px;text-transform:uppercase;font-weight:700;color:var(--terra);margin-bottom:16px}
+.h2{font-family:'Anton',sans-serif;font-size:clamp(36px,5vw,60px);text-transform:uppercase;line-height:1.02}
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:52px}
+.w{aspect-ratio:4/5;position:relative;overflow:hidden;background:
+  radial-gradient(140px 200px at 30% 30%, #2A2A2A, transparent),
+  radial-gradient(200px 260px at 75% 70%, #1F1F1F, transparent),
+  linear-gradient(160deg,#181818,#101010)}
+.w::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(242,240,234,.06) 1px,transparent 1.4px);background-size:14px 14px}
+.w::after{content:attr(data-t);position:absolute;left:18px;bottom:16px;font-family:'Anton',sans-serif;font-size:15px;letter-spacing:2px;text-transform:uppercase;color:var(--ink-soft)}
+.w:hover::after{color:var(--terra)}
+.w .tagx{position:absolute;top:14px;right:14px;font-size:10.5px;letter-spacing:2px;border:1px solid #333;padding:4px 10px;color:var(--ink-soft);text-transform:uppercase}
+.work-note{margin-top:20px;font-size:13px;color:var(--ink-soft);font-style:italic}
+
+/* styles list */
+.styles{background:var(--cream2);border-top:1px solid #232323;border-bottom:1px solid #232323}
+.slist{margin-top:44px}
+.srow{display:grid;grid-template-columns:auto 1fr auto;gap:26px;align-items:center;padding:26px 0;border-bottom:1px solid #262626;transition:padding .2s}
+.srow:hover{padding-left:14px}
+.srow .n{font-family:'Anton',sans-serif;font-size:17px;color:var(--ink-soft)}
+.srow h3{font-family:'Anton',sans-serif;font-size:clamp(22px,3vw,34px);text-transform:uppercase;letter-spacing:1px}
+.srow:hover h3{color:var(--terra)}
+.srow p{grid-column:2;color:var(--ink-soft);font-size:15px;max-width:560px;margin-top:-14px}
+.srow .arr{font-size:26px;color:var(--terra)}
+
+/* artist quote */
+.aq{text-align:center;max-width:760px;margin:0 auto}
+.aq blockquote{font-family:'Fraunces',serif;font-style:italic;font-size:clamp(22px,3vw,32px);line-height:1.4}
+.aq blockquote b{color:var(--terra);font-style:normal}
+.aq cite{display:block;margin-top:20px;font-style:normal;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--ink-soft)}
+
+/* booking */
+.book{background:var(--terra);color:#0D0D0D;padding:90px 0}
+.book .h2{color:#0D0D0D}
+.bgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.book p{font-weight:500;margin-top:18px;max-width:460px}
+.bsteps{display:grid;gap:0;margin-top:8px}
+.bs{display:flex;gap:18px;padding:18px 0;border-bottom:2px solid rgba(13,13,13,.15);align-items:baseline}
+.bs b{font-family:'Anton',sans-serif;font-size:20px}
+.bs span{font-size:15px;font-weight:500}
+.book .btn{background:#0D0D0D;color:var(--terra);margin-top:26px}
+.book .btn:hover{background:#222}
+.book .fine{font-size:13px;margin-top:14px;opacity:.7}
+
+footer{padding:44px 0;text-align:center;color:var(--ink-soft);font-size:13.5px;border-top:1px solid #232323}
+footer .fl{font-family:'Anton',sans-serif;font-size:19px;color:var(--ink);letter-spacing:1px}
+footer .fl span{color:var(--terra)}
+footer .concept{margin-top:14px;font-size:12px;color:#555}
+
+@media(max-width:900px){
+  .work{grid-template-columns:1fr 1fr}
+  .bgrid{grid-template-columns:1fr}
+  .nv{display:none}
+  .srow p{grid-column:1 / -1;margin-top:0}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <nav class="nav" aria-label="Main">
+    <div class="logo">SLANGING <span>INK</span></div>
+    <div class="nv">
+      <a href="#work">Work</a>
+      <a href="#styles">Styles</a>
+      <a href="#book" class="bk">Book a consult</a>
+    </div>
+  </nav>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>
+      <span class="row">INK THAT</span>
+      <span class="row outline">OUTLIVES</span>
+      <span class="row acid">THE TREND.</span>
+    </h1>
+    <div class="hero-sub">
+      <p>Custom tattoos only — no flash-rack copies. Black &amp; grey, fine line, traditional and cover-ups, drawn for your body and your story. Santa Barbara, CA.</p>
+      <div class="ctas">
+        <a class="btn btn-acid" href="#book">Book a consult</a>
+        <a class="btn btn-out" href="#work">See the work</a>
+      </div>
+    </div>
+    <div class="hero-meta">
+      <div class="hm"><b>12+</b><span>years tattooing</span></div>
+      <div class="hm"><b>100%</b><span>custom designs</span></div>
+      <div class="hm"><b>★ 5.0</b><span>on Yelp</span></div>
+      <div class="hm"><b>CA</b><span>licensed &amp; sterile</span></div>
+    </div>
+  </div>
+  <div class="mq" aria-hidden="true">
+    <div class="track">
+      <span>Custom only</span><span>✦</span><span>Black &amp; grey</span><span>✦</span><span>Fine line</span><span>✦</span><span>Traditional</span><span>✦</span><span>Cover-ups</span><span>✦</span><span>Santa Barbara</span><span>✦</span>
+      <span>Custom only</span><span>✦</span><span>Black &amp; grey</span><span>✦</span><span>Fine line</span><span>✦</span><span>Traditional</span><span>✦</span><span>Cover-ups</span><span>✦</span><span>Santa Barbara</span><span>✦</span>
+    </div>
+  </div>
+</header>
+
+<section id="work" style="padding-top:30px">
+  <div class="wrap">
+    <div class="k reveal">Selected work</div>
+    <h2 class="h2 reveal">The portfolio does the talking.</h2>
+    <div class="work">
+      <div class="w reveal" data-t="Black &amp; grey sleeve"><span class="tagx">2025</span></div>
+      <div class="w reveal" data-t="Fine line botanical"><span class="tagx">2025</span></div>
+      <div class="w reveal" data-t="Traditional panther"><span class="tagx">2024</span></div>
+      <div class="w reveal" data-t="Script — custom"><span class="tagx">2025</span></div>
+      <div class="w reveal" data-t="Cover-up, before/after"><span class="tagx">2024</span></div>
+      <div class="w reveal" data-t="Blackwork back piece"><span class="tagx">2026</span></div>
+    </div>
+    <p class="work-note reveal">Placeholders — drop in real portfolio photos here. Tattoo clients choose by portfolio; this grid is the whole sale.</p>
+  </div>
+</section>
+
+<section class="styles" id="styles">
+  <div class="wrap">
+    <div class="k reveal">What we do</div>
+    <h2 class="h2 reveal">Pick your poison.</h2>
+    <div class="slist">
+      <div class="srow reveal"><div class="n">01</div><h3>Black &amp; Grey Realism</h3><div class="arr">→</div><p>Smooth gradients, deep blacks, portraits and statues that hold up for decades.</p></div>
+      <div class="srow reveal"><div class="n">02</div><h3>Fine Line</h3><div class="arr">→</div><p>Delicate, precise, single-needle work — botanicals, script, minimal pieces.</p></div>
+      <div class="srow reveal"><div class="n">03</div><h3>American Traditional</h3><div class="arr">→</div><p>Bold lines, classic palettes, built to age like the sailors intended.</p></div>
+      <div class="srow reveal"><div class="n">04</div><h3>Cover-ups &amp; Reworks</h3><div class="arr">→</div><p>The tattoo you regret becomes the one you show off. Bring us the mistake.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap aq reveal">
+    <blockquote>"A tattoo is the only thing you'll wear every day for the rest of your life. <b>Act accordingly.</b>"</blockquote>
+    <cite>— The studio philosophy</cite>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap bgrid">
+    <div>
+      <div class="k reveal" style="color:#0D0D0D">Booking</div>
+      <h2 class="h2 reveal">Consults are free. Regret isn't.</h2>
+      <p class="reveal">Every piece starts with a conversation — placement, size, reference images, budget. No deposit until the design direction is locked.</p>
+    </div>
+    <div>
+      <div class="bsteps reveal">
+        <div class="bs"><b>01</b><span>DM the studio on Instagram with your idea + placement photo</span></div>
+        <div class="bs"><b>02</b><span>Free 15-minute consult — in person or by phone</span></div>
+        <div class="bs"><b>03</b><span>Deposit locks your date; design preview before the needle</span></div>
+      </div>
+      <a class="btn reveal" href="#" rel="noopener">DM on Instagram →</a>
+      <p class="fine reveal">Point this button at the studio's real Instagram. Walk-ins for small pieces when available.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fl">SLANGING <span>INK</span></div>
+    <div>Santa Barbara, California · CA licensed · Hospital-grade sterilization</div>
+    <div class="concept">Concept design — [Your Name], Santa Barbara web design · [phone] · [portfolio]</div>
+  </div>
+</footer>
+
+<script>
+// scroll reveal
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+<!-- ============ MOTION PACK (kept in downloaded pages) ============ -->
+<style data-cw-motion>
+@media (prefers-reduced-motion: no-preference) {
+  /* scroll progress bar */
+  .cw-prog{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--terra,#C0392B),var(--gold,#E0A458));z-index:9998;transition:width .12s linear;border-radius:0 3px 3px 0}
+  /* ambient floating orb in hero */
+  .hero{position:relative}
+  .cw-orb{position:absolute;top:8%;right:6%;width:44vmin;height:44vmin;border-radius:50%;pointer-events:none;z-index:0;
+    background:radial-gradient(circle at 40% 40%, var(--gold,#E0A458), transparent 62%);
+    opacity:.2;filter:blur(58px);animation:cwFloat 12s ease-in-out infinite alternate}
+  @keyframes cwFloat{
+    0%{transform:translate(0,0) scale(1)}
+    50%{transform:translate(-7vmin,5vmin) scale(1.12)}
+    100%{transform:translate(4vmin,-4vmin) scale(.94)}
+  }
+  /* hero entrance stagger (only on pages whose hero isn't already reveal-animated) */
+  body.cw-hero:not(.cw-in) .hero h1,
+  body.cw-hero:not(.cw-in) .hero p,
+  body.cw-hero:not(.cw-in) .hero .ctas,
+  body.cw-hero:not(.cw-in) .hero .hero-ctas,
+  body.cw-hero:not(.cw-in) .hero .proof,
+  body.cw-hero:not(.cw-in) .hero .eyebrow,
+  body.cw-hero:not(.cw-in) .hero .kicker,
+  body.cw-hero:not(.cw-in) .hero .tagline,
+  body.cw-hero:not(.cw-in) .hero .over,
+  body.cw-hero:not(.cw-in) .hero .since,
+  body.cw-hero:not(.cw-in) .hero .pill{opacity:0}
+  @keyframes cwUp{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:translateY(0)}}
+  body.cw-hero.cw-in .hero .eyebrow, body.cw-hero.cw-in .hero .kicker, body.cw-hero.cw-in .hero .tagline,
+  body.cw-hero.cw-in .hero .over, body.cw-hero.cw-in .hero .since, body.cw-hero.cw-in .hero .pill{animation:cwUp .7s cubic-bezier(.2,.7,.2,1) both}
+  body.cw-hero.cw-in .hero h1{animation:cwUp .9s cubic-bezier(.2,.7,.2,1) .12s both}
+  body.cw-hero.cw-in .hero p{animation:cwUp .9s cubic-bezier(.2,.7,.2,1) .26s both}
+  body.cw-hero.cw-in .hero .ctas, body.cw-hero.cw-in .hero .hero-ctas{animation:cwUp .9s cubic-bezier(.2,.7,.2,1) .4s both}
+  body.cw-hero.cw-in .hero .proof{animation:cwUp .9s cubic-bezier(.2,.7,.2,1) .54s both}
+  /* button shine sweep */
+  .btn{position:relative;overflow:hidden}
+  .btn::after{content:"";position:absolute;top:0;left:-90%;width:55%;height:100%;
+    background:linear-gradient(105deg,transparent,rgba(255,255,255,.4),transparent);
+    transform:skewX(-20deg);transition:left .55s ease;pointer-events:none}
+  .btn:hover::after{left:140%}
+  /* auto-reveal for pages without their own */
+  .cw-r{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+  .cw-r.cw-rin{opacity:1;transform:none}
+}
+</style>
+<script data-cw-motion>
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  // hero entrance (skip if this page's hero already animates itself via .reveal)
+  var hero = document.querySelector('.hero');
+  if (hero && !hero.querySelector('h1.reveal')) document.body.classList.add('cw-hero');
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){ document.body.classList.add('cw-in'); }); });
+
+  // ambient orb
+  if (hero) { var orb = document.createElement('div'); orb.className = 'cw-orb'; orb.setAttribute('aria-hidden','true'); hero.appendChild(orb); }
+
+  // scroll progress bar
+  var prog = document.createElement('div'); prog.className = 'cw-prog'; document.body.appendChild(prog);
+  var doc = document.documentElement;
+  addEventListener('scroll', function(){
+    var max = doc.scrollHeight - innerHeight;
+    prog.style.width = (max > 0 ? (scrollY / max) * 100 : 0) + '%';
+  }, {passive:true});
+
+  // auto scroll-reveal for templates that don't ship their own
+  if (!document.querySelector('.reveal')) {
+    var targets = document.querySelectorAll('section .wrap > *:not(script):not(style), .final > *');
+    var vh = innerHeight;
+    targets.forEach(function(el){ if (el.getBoundingClientRect().top > vh * 0.9) el.classList.add('cw-r'); });
+    var io2 = new IntersectionObserver(function(es){ es.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('cw-rin'); io2.unobserve(e.target); }
+    }); }, {threshold:.1});
+    document.querySelectorAll('.cw-r').forEach(function(el){ io2.observe(el); });
+  }
+})();
+</script>
+
+<!-- ================= EDITOR (private — press Ctrl+Shift+E, or open the file with #editor added to the address) ================= -->
+<style data-cw-editor>
+.cw-bar{position:fixed;bottom:22px;right:22px;z-index:9999;background:#111827;color:#F9FAFB;border-radius:18px;box-shadow:0 16px 50px rgba(0,0,0,.45);padding:14px 16px;font-family:'Inter',system-ui,sans-serif;font-size:13px;width:280px}
+.cw-bar h5{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#9CA3AF;margin:0 0 10px;font-family:'Inter',sans-serif}
+.cw-row{display:flex;gap:8px;align-items:center;margin-bottom:10px;flex-wrap:wrap}
+.cw-btn{flex:1;background:#374151;color:#fff;border:none;border-radius:10px;padding:10px 12px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit}
+.cw-btn:hover{background:#4B5563}
+.cw-btn.on{background:#059669}
+.cw-btn.dl{background:#C4532D;flex:2}
+.cw-btn.dl:hover{background:#A03E1E}
+.cw-swatch{width:26px;height:26px;border-radius:50%;border:2px solid rgba(255,255,255,.25);cursor:pointer;padding:0}
+.cw-swatch:hover{border-color:#fff}
+.cw-field{width:100%;background:#1F2937;color:#F9FAFB;border:1px solid #374151;border-radius:8px;padding:8px 10px;font-size:12.5px;margin-bottom:8px;font-family:inherit;box-sizing:border-box}
+.cw-tip{font-size:11.5px;color:#9CA3AF;line-height:1.45;margin:2px 0 0}
+.cw-hide{display:none !important}
+body.cw-editing [contenteditable]:hover{outline:2px dashed #059669;outline-offset:2px}
+body.cw-editing{caret-color:#059669}
+.cw-min{position:fixed;bottom:22px;right:22px;z-index:9999;background:#111827;color:#fff;border:none;border-radius:999px;width:48px;height:48px;font-size:20px;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+body.cw-imgmode .cw-imgok{outline:2px dashed rgba(245,158,11,.75);outline-offset:-2px;cursor:copy}
+body.cw-imgmode .cw-imgok:hover{outline:3px dashed #F59E0B}
+</style>
+
+<div class="cw-bar cw-hide" data-cw-editor id="cwBar">
+  <h5>Page editor — private (Ctrl+Shift+E)</h5>
+  <div class="cw-row">
+    <button class="cw-btn" id="cwEdit">✎ Text: OFF</button>
+    <button class="cw-btn" id="cwImg">🖼 Images: OFF</button>
+  </div>
+  <div class="cw-row">
+    <button class="cw-btn" id="cwSeo">SEO</button>
+    <button class="cw-btn" id="cwMin" style="flex:0 0 auto">—</button>
+  </div>
+  <div id="cwSeoPanel" class="cw-hide">
+    <input class="cw-field" id="cwTitle" placeholder="Browser tab title (SEO)">
+    <textarea class="cw-field" id="cwDesc" rows="3" placeholder="Meta description (SEO)"></textarea>
+  </div>
+  <div class="cw-row" title="Theme">
+    <button class="cw-swatch" data-theme="taqueria" style="background:linear-gradient(135deg,#1E3A2F 50%,#C4532D 50%)"></button>
+    <button class="cw-swatch" data-theme="ocean" style="background:linear-gradient(135deg,#12303F 50%,#1E7FA6 50%)"></button>
+    <button class="cw-swatch" data-theme="barber" style="background:linear-gradient(135deg,#1C2733 50%,#B08D57 50%)"></button>
+    <button class="cw-swatch" data-theme="rose" style="background:linear-gradient(135deg,#3A1E33 50%,#C24A6B 50%)"></button>
+    <button class="cw-swatch" data-theme="forest" style="background:linear-gradient(135deg,#233A22 50%,#7A9E3B 50%)"></button>
+    <span style="font-size:11px;color:#9CA3AF">theme</span>
+  </div>
+  <div class="cw-row">
+    <button class="cw-btn dl" id="cwDl">⬇ Download clean HTML</button>
+  </div>
+  <p class="cw-tip">Text ON: click any text and type. Images ON: click a dashed placeholder to insert a photo (Shift+click sets any element's background). Download saves the finished page with the editor removed — safe to send to clients.</p>
+</div>
+<button class="cw-min cw-hide" data-cw-editor id="cwRestore" title="Open editor">✎</button>
+<input type="file" accept="image/*" id="cwFile" class="cw-hide" data-cw-editor>
+
+<script data-cw-editor>
+(function(){
+  var bar = document.getElementById('cwBar'), restore = document.getElementById('cwRestore');
+
+  // ---- private visibility: hidden unless Ctrl+Shift+E or #editor in URL ----
+  function openEditor(){ bar.classList.remove('cw-hide'); restore.classList.add('cw-hide'); }
+  function closeEditor(){ bar.classList.add('cw-hide'); restore.classList.add('cw-hide'); }
+  if (/editor/i.test(location.hash)) openEditor();
+  document.addEventListener('keydown', function(e){
+    if (e.ctrlKey && e.shiftKey && (e.key === 'E' || e.key === 'e')) {
+      e.preventDefault();
+      (bar.classList.contains('cw-hide') && restore.classList.contains('cw-hide')) ? openEditor() : closeEditor();
+    }
+  });
+
+  // ---- text editing ----
+  var editing = false, btn = document.getElementById('cwEdit');
+  btn.onclick = function(){
+    editing = !editing;
+    document.body.contentEditable = editing ? 'true' : 'false';
+    document.body.classList.toggle('cw-editing', editing);
+    btn.textContent = '✎ Text: ' + (editing ? 'ON' : 'OFF');
+    btn.classList.toggle('on', editing);
+  };
+  document.querySelectorAll('[data-cw-editor]').forEach(function(el){ el.contentEditable = 'false'; });
+
+  // ---- image mode ----
+  var imgMode = false, imgBtn = document.getElementById('cwImg'), fileInput = document.getElementById('cwFile'), pending = null;
+  imgBtn.onclick = function(){
+    imgMode = !imgMode;
+    document.body.classList.toggle('cw-imgmode', imgMode);
+    imgBtn.textContent = '🖼 Images: ' + (imgMode ? 'ON' : 'OFF');
+    imgBtn.classList.toggle('on', imgMode);
+    if (imgMode) document.querySelectorAll('.ph, .w, .p1, .p2, .p3, .p4, .plank, .ba, .cake-emoji').forEach(function(el){ el.classList.add('cw-imgok'); });
+  };
+  fileInput.onchange = function(){
+    var f = this.files[0];
+    if (!f || !pending) return;
+    var r = new FileReader();
+    r.onload = function(){
+      pending.style.background = 'url(' + r.result + ') center / cover no-repeat';
+      pending = null;
+    };
+    r.readAsDataURL(f);
+    this.value = '';
+  };
+
+  // ---- clicks: block link nav while editing; route image-mode clicks ----
+  document.addEventListener('click', function(e){
+    if (e.target.closest('[data-cw-editor]')) return;
+    if (imgMode) {
+      var t = e.target.closest('.cw-imgok');
+      if (!t && e.shiftKey) t = e.target;
+      if (t) { e.preventDefault(); e.stopPropagation(); pending = t; fileInput.click(); return; }
+    }
+    if (editing && e.target.closest('a')) e.preventDefault();
+  }, true);
+
+  // ---- SEO panel ----
+  var seoPanel = document.getElementById('cwSeoPanel');
+  var t = document.getElementById('cwTitle'), d = document.getElementById('cwDesc');
+  var metaDesc = document.querySelector('meta[name="description"]');
+  t.value = document.title; d.value = metaDesc ? metaDesc.content : '';
+  document.getElementById('cwSeo').onclick = function(){ seoPanel.classList.toggle('cw-hide'); };
+  t.oninput = function(){ document.title = t.value; };
+  d.oninput = function(){ if (metaDesc) metaDesc.content = d.value; };
+
+  // ---- themes ----
+  var themes = {
+    taqueria: {'--cream':'#FAF4E8','--cream2':'#F3EAD7','--terra':'#C4532D','--terra-dark':'#A03E1E','--green':'#1E3A2F','--green-soft':'#2C5243','--gold':'#E0A458'},
+    ocean:    {'--cream':'#F4F8F9','--cream2':'#E8F0F2','--terra':'#1E7FA6','--terra-dark':'#166384','--green':'#12303F','--green-soft':'#1D4557','--gold':'#5FB6D9'},
+    barber:   {'--cream':'#F7F5F0','--cream2':'#EDEAE1','--terra':'#B08D57','--terra-dark':'#8F7245','--green':'#1C2733','--green-soft':'#2A3A4A','--gold':'#D8B77E'},
+    rose:     {'--cream':'#FBF4F6','--cream2':'#F4E7EC','--terra':'#C24A6B','--terra-dark':'#A03A57','--green':'#3A1E33','--green-soft':'#54304B','--gold':'#E39CB3'},
+    forest:   {'--cream':'#F7F8F1','--cream2':'#ECEFDE','--terra':'#7A9E3B','--terra-dark':'#5F7D2C','--green':'#233A22','--green-soft':'#345233','--gold':'#B7CE6E'}
+  };
+  document.querySelectorAll('.cw-swatch').forEach(function(s){
+    s.onclick = function(){
+      var vars = themes[s.dataset.theme];
+      for (var k in vars) document.documentElement.style.setProperty(k, vars[k]);
+    };
+  });
+
+  // ---- minimize / restore ----
+  document.getElementById('cwMin').onclick = function(){ bar.classList.add('cw-hide'); restore.classList.remove('cw-hide'); };
+  restore.onclick = function(){ bar.classList.remove('cw-hide'); restore.classList.add('cw-hide'); };
+
+  // ---- clean export ----
+  document.getElementById('cwDl').onclick = function(){
+    var wasEditing = editing;
+    if (wasEditing) btn.onclick();
+    if (imgMode) imgBtn.onclick();
+    var clone = document.documentElement.cloneNode(true);
+    clone.querySelectorAll('[data-cw-editor]').forEach(function(el){ el.remove(); });
+    clone.querySelectorAll('[contenteditable]').forEach(function(el){ el.removeAttribute('contenteditable'); });
+    clone.querySelectorAll('.cw-imgok').forEach(function(el){ el.classList.remove('cw-imgok'); });
+    var body = clone.querySelector('body');
+    body.classList.remove('cw-editing','cw-imgmode');
+    body.removeAttribute('contenteditable');
+    var html = '<!DOCTYPE html>\n' + clone.outerHTML;
+    var blob = new Blob([html], {type:'text/html'});
+    var a = document.createElement('a');
+    var name = (document.title.split('|')[0] || 'landing-page').trim().toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+    a.href = URL.createObjectURL(blob);
+    a.download = (name || 'landing-page') + '.html';
+    document.body.appendChild(a); a.click(); a.remove();
+    if (wasEditing) btn.onclick();
+  };
+})();
+</script>
+
+</body>
+</html>

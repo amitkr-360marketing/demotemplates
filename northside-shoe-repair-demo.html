@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Northside Shoe Repair | Expert Cobbler in Santa Barbara Since 1978</title>
+<meta name="description" content="Northside Shoe Repair — Santa Barbara's trusted cobbler. Resoling, heel repair, leather restoration, zipper replacement and shine. 80+ five-star reviews. Visit us on De La Vina St.">
+<link rel="canonical" href="https://www.northsideshoerepair.com/">
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Northside Shoe Repair — Santa Barbara's Trusted Cobbler">
+<meta property="og:description" content="Resoling, leather restoration and repairs done right. 80+ five-star reviews.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#2B2118">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Northside Shoe Repair",
+  "description": "Shoe repair, resoling and leather restoration in Santa Barbara, California.",
+  "address": {"@type": "PostalAddress","addressLocality": "Santa Barbara","addressRegion": "CA","addressCountry": "US"},
+  "telephone": "+1-805-687-4820",
+  "priceRange": "$$"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F6F1E7; --cream2:#EDE5D4;
+  --terra:#8C3B22; --terra-dark:#6E2D18;
+  --green:#2B2118; --green-soft:#453626;
+  --gold:#B98A44; --ink:#241C12; --ink-soft:#6B5F4D;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,.serif{font-family:'Fraunces',Georgia,serif}
+a{color:inherit}
+.wrap{width:100%;max-width:1060px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:4px;font-weight:700;font-size:16px;text-decoration:none;transition:all .15s;cursor:pointer;border:none}
+.btn-primary{background:var(--terra);color:#fff}
+.btn-primary:hover{background:var(--terra-dark)}
+.btn-line{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--cream)}
+.rule{height:1px;background:#D9CDB4;margin:0}
+
+/* header */
+.topbar{border-bottom:1px solid #D9CDB4}
+.topbar .inner{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.brand{font-family:'Fraunces',serif;font-weight:900;font-size:21px;letter-spacing:.3px}
+.brand small{display:block;font-family:'Inter',sans-serif;font-weight:600;font-size:10.5px;letter-spacing:2.5px;color:var(--terra);text-transform:uppercase}
+.top-links{display:flex;gap:26px;font-size:15px;font-weight:500;align-items:center}
+.top-links a{text-decoration:none;color:var(--ink-soft)}
+.top-links a:hover{color:var(--terra)}
+.top-links .call{color:var(--terra);font-weight:700}
+
+/* hero */
+.hero{padding:88px 0 72px}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:64px;align-items:center}
+.kicker{font-size:12.5px;letter-spacing:3px;text-transform:uppercase;font-weight:700;color:var(--terra);margin-bottom:20px}
+.hero h1{font-size:clamp(40px,5.6vw,64px);font-weight:900;line-height:1.05;letter-spacing:-.5px}
+.hero h1 em{font-style:italic;color:var(--terra)}
+.hero .lede{margin-top:24px;font-size:18.5px;color:var(--ink-soft);max-width:480px}
+.hero-ctas{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+.hero-badges{margin-top:40px;display:flex;gap:34px;flex-wrap:wrap}
+.badge-n{font-family:'Fraunces',serif;font-size:30px;font-weight:900;color:var(--terra)}
+.badge-t{font-size:13px;color:var(--ink-soft);font-weight:500}
+.stamp{background:var(--green);color:var(--cream);border-radius:50%;width:270px;height:270px;margin:0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px;transform:rotate(-4deg);box-shadow:0 24px 60px rgba(43,33,24,.35);position:relative}
+.stamp::before{content:"";position:absolute;inset:12px;border:1.5px dashed rgba(246,241,231,.4);border-radius:50%}
+.stamp .s1{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:600}
+.stamp .s2{font-family:'Fraunces',serif;font-size:30px;font-weight:900;line-height:1.1;margin:8px 0}
+.stamp .s3{font-size:13px;color:rgba(246,241,231,.75)}
+
+/* services */
+.services{padding:84px 0;background:#FFFDF8;border-top:1px solid #D9CDB4;border-bottom:1px solid #D9CDB4}
+.sec-kicker{font-size:12.5px;letter-spacing:3px;text-transform:uppercase;font-weight:700;color:var(--terra);margin-bottom:14px}
+.sec-h{font-size:clamp(30px,3.8vw,42px);font-weight:900;line-height:1.12;letter-spacing:-.3px}
+.svc-list{margin-top:48px}
+.svc{display:grid;grid-template-columns:64px 1fr auto;gap:24px;align-items:baseline;padding:26px 0;border-bottom:1px solid #E7DDC8}
+.svc:last-child{border-bottom:none}
+.svc .no{font-family:'Fraunces',serif;font-size:24px;font-weight:600;color:var(--gold)}
+.svc h3{font-size:22px;font-weight:600}
+.svc p{color:var(--ink-soft);font-size:15.5px;margin-top:4px;max-width:560px}
+.svc .price{font-family:'Fraunces',serif;font-size:19px;font-weight:600;color:var(--terra);white-space:nowrap}
+
+/* process */
+.process{padding:84px 0}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.step{background:#FFFDF8;border:1px solid #E2D7C0;border-radius:8px;padding:32px 28px}
+.step .ic{width:46px;height:46px;border-radius:50%;background:var(--terra);color:#fff;font-family:'Fraunces',serif;font-weight:900;font-size:19px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.step h3{font-size:20px;margin-bottom:6px}
+.step p{font-size:15px;color:var(--ink-soft)}
+
+/* quotes */
+.quotes{padding:84px 0;background:var(--green);color:var(--cream)}
+.quotes .sec-kicker{color:var(--gold)}
+.q-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:48px}
+.q{border-left:3px solid var(--gold);padding:6px 0 6px 26px}
+.q p{font-family:'Fraunces',serif;font-size:20px;font-style:italic;line-height:1.5}
+.q .who{margin-top:14px;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;color:rgba(246,241,231,.65)}
+.q .stars{color:var(--gold);letter-spacing:2px;margin-bottom:10px;font-size:15px}
+
+/* visit */
+.visit{padding:84px 0}
+.v-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-top:44px}
+.v-item{padding:20px 0;border-bottom:1px solid #E0D5BE;display:flex;gap:16px;align-items:baseline}
+.v-item b{min-width:110px;font-size:14px;letter-spacing:1px;text-transform:uppercase;color:var(--terra)}
+.v-item span{color:var(--ink-soft);font-size:16px}
+.cta-card{background:#FFFDF8;border:1px solid #E2D7C0;border-radius:8px;padding:40px 36px;text-align:center}
+.cta-card h3{font-size:26px;margin-bottom:10px}
+.cta-card p{color:var(--ink-soft);margin-bottom:26px}
+.cta-card .tel{display:block;font-family:'Fraunces',serif;font-size:34px;font-weight:900;color:var(--terra);text-decoration:none;margin-bottom:20px}
+
+footer{padding:44px 0;border-top:1px solid #D9CDB4;text-align:center;color:var(--ink-soft);font-size:14px}
+footer .fb{font-family:'Fraunces',serif;font-weight:900;font-size:18px;color:var(--ink)}
+footer .concept{margin-top:14px;font-size:12.5px;color:#A3977F}
+
+@media(max-width:900px){
+  .hero-grid,.q-grid,.v-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .stamp{width:230px;height:230px}
+  .svc{grid-template-columns:44px 1fr;gap:14px}
+  .svc .price{grid-column:2}
+  .top-links{display:none}
+  .hero{padding:56px 0 48px}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap inner">
+    <div class="brand">Northside Shoe Repair<small>Est. 1978 · Santa Barbara</small></div>
+    <nav class="top-links" aria-label="Main">
+      <a href="#services">Services &amp; Prices</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+      <a class="call" href="tel:+18056874820">(805) 687-4820</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="kicker">Resoling · Restoration · Repairs</div>
+      <h1>Good shoes deserve a <em>second life.</em></h1>
+      <p class="lede">Before you replace them, bring them in. Four decades of cobbler craftsmanship — resoling, leather restoration, and repairs done the old way: properly.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="tel:+18056874820">Call for a Quote</a>
+        <a class="btn btn-line" href="#services">Services &amp; Prices</a>
+      </div>
+      <div class="hero-badges">
+        <div><div class="badge-n">45+</div><div class="badge-t">years of craft</div></div>
+        <div><div class="badge-n">80+</div><div class="badge-t">five-star reviews</div></div>
+        <div><div class="badge-n">2–5</div><div class="badge-t">day turnaround</div></div>
+      </div>
+    </div>
+    <div>
+      <div class="stamp">
+        <div class="s1">The cobbler's promise</div>
+        <div class="s2">If it can be saved, we'll save it.</div>
+        <div class="s3">Honest advice — we'll tell you when repair isn't worth it.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-kicker">Services &amp; honest prices</div>
+    <h2 class="sec-h">What we fix, and what it costs.</h2>
+    <div class="svc-list">
+      <div class="svc"><div class="no">01</div><div><h3>Full resole &amp; heel</h3><p>Leather or rubber soles rebuilt from the welt up. The repair that makes a $400 pair of boots new again.</p></div><div class="price">from $85</div></div>
+      <div class="svc"><div class="no">02</div><div><h3>Heel replacement</h3><p>Worn heels replaced and balanced — dress shoes, boots and everyday pairs.</p></div><div class="price">from $30</div></div>
+      <div class="svc"><div class="no">03</div><div><h3>Leather restoration</h3><p>Deep clean, recondition, recolor. Bags, jackets and shoes brought back from tired to loved.</p></div><div class="price">from $45</div></div>
+      <div class="svc"><div class="no">04</div><div><h3>Zipper &amp; hardware</h3><p>Boots, bags and jackets — zippers replaced, eyelets and buckles repaired.</p></div><div class="price">from $25</div></div>
+      <div class="svc"><div class="no">05</div><div><h3>Stretching &amp; fitting</h3><p>Too tight in the toe? Professional stretching for a fit that finally feels right.</p></div><div class="price">from $20</div></div>
+      <div class="svc"><div class="no">06</div><div><h3>Shine &amp; conditioning</h3><p>The classic stand finish — while you wait.</p></div><div class="price">from $12</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="wrap">
+    <div class="sec-kicker">How it works</div>
+    <h2 class="sec-h">Drop off. We work. You're back on your feet.</h2>
+    <div class="steps">
+      <div class="step"><div class="ic">1</div><h3>Bring them in</h3><p>No appointment needed. We'll look at your shoes together and quote the repair on the spot — honestly.</p></div>
+      <div class="step"><div class="ic">2</div><h3>Craft takes over</h3><p>Hand-stitching, proper materials, no shortcuts. Most repairs are ready in 2–5 days.</p></div>
+      <div class="step"><div class="ic">3</div><h3>Like new — or better</h3><p>Pick up shoes that fit your feet the way only broken-in, well-repaired shoes can.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="quotes" id="reviews">
+  <div class="wrap">
+    <div class="sec-kicker">From our customers</div>
+    <h2 class="sec-h">80+ five-star reviews and counting.</h2>
+    <div class="q-grid">
+      <div class="q"><div class="stars">★★★★★</div><p>"They resoled boots I'd written off completely. Came back looking better than the day I bought them."</p><div class="who">— Yelp review</div></div>
+      <div class="q"><div class="stars">★★★★★</div><p>"Honest to a fault — told me one pair wasn't worth fixing and saved me the money. That's why I keep coming back."</p><div class="who">— Yelp review</div></div>
+      <div class="q"><div class="stars">★★★★★</div><p>"Fast turnaround, fair prices, real craftsmanship. The kind of shop you hope never closes."</p><div class="who">— Yelp review</div></div>
+      <div class="q"><div class="stars">★★★★★</div><p>"Fixed a zipper on my favorite jacket in a day. Small thing, huge difference."</p><div class="who">— Yelp review</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <div class="sec-kicker">Visit the shop</div>
+    <h2 class="sec-h">On the north side, where we've always been.</h2>
+    <div class="v-grid">
+      <div>
+        <div class="v-item"><b>Address</b><span>[Street address], Santa Barbara, CA</span></div>
+        <div class="v-item"><b>Hours</b><span>Mon–Fri 9:00–5:30 · Sat 10:00–2:00 · Sun closed</span></div>
+        <div class="v-item"><b>Parking</b><span>Free parking directly in front of the shop</span></div>
+        <div class="v-item"><b>Turnaround</b><span>Most repairs ready in 2–5 days; shines while you wait</span></div>
+      </div>
+      <div class="cta-card">
+        <h3>Not sure it can be saved?</h3>
+        <p>Call us and describe the damage — we'll tell you straight whether it's worth repairing.</p>
+        <a class="tel" href="tel:+18056874820">(805) 687-4820</a>
+        <a class="btn btn-primary" href="https://maps.google.com/?q=Northside+Shoe+Repair+Santa+Barbara" target="_blank" rel="noopener">Get Directions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fb">Northside Shoe Repair</div>
+    <div>Santa Barbara, California · Est. 1978</div>
+    <div class="concept">Concept design — [Your Name], Santa Barbara web design · [phone] · [portfolio]</div>
+  </div>
+</footer>
+
+<!-- ============ MOTION PACK (kept in downloaded pages) ============ -->
+<style data-cw-motion>
+@media (prefers-reduced-motion: no-preference) {
+  /* scroll progress bar */
+  .cw-prog{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--terra,#C0392B),var(--gold,#E0A458));z-index:9998;transition:width .12s linear;border-radius:0 3px 3px 0}
+  /* ambient floating orb in hero */
+  .hero{position:relative}
+  .cw-orb{position:absolute;top:8%;right:6%;width:44vmin;height:44vmin;border-radius:50%;pointer-events:none;z-index:0;
+    background:radial-gradient(circle at 40% 40%, var(--gold,#E0A458), transparent 62%);
+    opacity:.2;filter:blur(58px);animation:cwFloat 12s ease-in-out infinite alternate}
+  @keyframes cwFloat{
+    0%{transform:translate(0,0) scale(1)}
+    50%{transform:translate(-7vmin,5vmin) scale(1.12)}
+    100%{transform:translate(4vmin,-4vmin) scale(.94)}
+  }
+  /* hero entrance stagger (only on pages whose hero isn't already reveal-animated) */
+  body.cw-hero:not(.cw-in) .hero h1,
+  body.cw-hero:not(.cw-in) .hero p,
+  body.cw-hero:not(.cw-in) .hero .ctas,
+  body.cw-hero:not(.cw-in) .hero .hero-ctas,
+  body.cw-hero:not(.cw-in) .hero .proof,
+  body.cw-hero:not(.cw-in) .hero .eyebrow,
+  body.cw-hero:not(.cw-in) .hero .kicker,
+  body.cw-hero:not(.cw-in) .hero .tagline,
+  body.cw-hero:not(.cw-in) .hero .over,
+  body.cw-hero:not(.cw-in) .hero .since,
+  body.cw-hero:not(.cw-in) .hero .pill{opacity:0}
+  @keyframes cwUp{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:translateY(0)}}
+  body.cw-hero.cw-in .hero .eyebrow, body.cw-hero.cw-in .hero .kicker, body.cw-hero.cw-in .hero .tagline,
+  body.cw-hero.cw-in .hero .over, body.cw-hero.cw-in .hero .since, body.cw-hero.cw-in .hero .pill{animation:cwUp .7s cubic-bezier(.2,.7,.2,1) both}
+  body.cw-hero.cw-in .hero h1{animation:cwUp .9s cubic-bezier(.2,.7,.2,1) .12s both}
+  body.cw-hero.cw-in .hero p{animation:cwUp .9s cubic-bezier(.2,.7,.2,1) .26s both}
+  body.cw-hero.cw-in .hero .ctas, body.cw-hero.cw-in .hero .hero-ctas{animation:cwUp .9s cubic-bezier(.2,.7,.2,1) .4s both}
+  body.cw-hero.cw-in .hero .proof{animation:cwUp .9s cubic-bezier(.2,.7,.2,1) .54s both}
+  /* button shine sweep */
+  .btn{position:relative;overflow:hidden}
+  .btn::after{content:"";position:absolute;top:0;left:-90%;width:55%;height:100%;
+    background:linear-gradient(105deg,transparent,rgba(255,255,255,.4),transparent);
+    transform:skewX(-20deg);transition:left .55s ease;pointer-events:none}
+  .btn:hover::after{left:140%}
+  /* auto-reveal for pages without their own */
+  .cw-r{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+  .cw-r.cw-rin{opacity:1;transform:none}
+}
+</style>
+<script data-cw-motion>
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  // hero entrance (skip if this page's hero already animates itself via .reveal)
+  var hero = document.querySelector('.hero');
+  if (hero && !hero.querySelector('h1.reveal')) document.body.classList.add('cw-hero');
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){ document.body.classList.add('cw-in'); }); });
+
+  // ambient orb
+  if (hero) { var orb = document.createElement('div'); orb.className = 'cw-orb'; orb.setAttribute('aria-hidden','true'); hero.appendChild(orb); }
+
+  // scroll progress bar
+  var prog = document.createElement('div'); prog.className = 'cw-prog'; document.body.appendChild(prog);
+  var doc = document.documentElement;
+  addEventListener('scroll', function(){
+    var max = doc.scrollHeight - innerHeight;
+    prog.style.width = (max > 0 ? (scrollY / max) * 100 : 0) + '%';
+  }, {passive:true});
+
+  // auto scroll-reveal for templates that don't ship their own
+  if (!document.querySelector('.reveal')) {
+    var targets = document.querySelectorAll('section .wrap > *:not(script):not(style), .final > *');
+    var vh = innerHeight;
+    targets.forEach(function(el){ if (el.getBoundingClientRect().top > vh * 0.9) el.classList.add('cw-r'); });
+    var io2 = new IntersectionObserver(function(es){ es.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('cw-rin'); io2.unobserve(e.target); }
+    }); }, {threshold:.1});
+    document.querySelectorAll('.cw-r').forEach(function(el){ io2.observe(el); });
+  }
+})();
+</script>
+
+<!-- ================= EDITOR (private — press Ctrl+Shift+E, or open the file with #editor added to the address) ================= -->
+<style data-cw-editor>
+.cw-bar{position:fixed;bottom:22px;right:22px;z-index:9999;background:#111827;color:#F9FAFB;border-radius:18px;box-shadow:0 16px 50px rgba(0,0,0,.45);padding:14px 16px;font-family:'Inter',system-ui,sans-serif;font-size:13px;width:280px}
+.cw-bar h5{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#9CA3AF;margin:0 0 10px;font-family:'Inter',sans-serif}
+.cw-row{display:flex;gap:8px;align-items:center;margin-bottom:10px;flex-wrap:wrap}
+.cw-btn{flex:1;background:#374151;color:#fff;border:none;border-radius:10px;padding:10px 12px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit}
+.cw-btn:hover{background:#4B5563}
+.cw-btn.on{background:#059669}
+.cw-btn.dl{background:#C4532D;flex:2}
+.cw-btn.dl:hover{background:#A03E1E}
+.cw-swatch{width:26px;height:26px;border-radius:50%;border:2px solid rgba(255,255,255,.25);cursor:pointer;padding:0}
+.cw-swatch:hover{border-color:#fff}
+.cw-field{width:100%;background:#1F2937;color:#F9FAFB;border:1px solid #374151;border-radius:8px;padding:8px 10px;font-size:12.5px;margin-bottom:8px;font-family:inherit;box-sizing:border-box}
+.cw-tip{font-size:11.5px;color:#9CA3AF;line-height:1.45;margin:2px 0 0}
+.cw-hide{display:none !important}
+body.cw-editing [contenteditable]:hover{outline:2px dashed #059669;outline-offset:2px}
+body.cw-editing{caret-color:#059669}
+.cw-min{position:fixed;bottom:22px;right:22px;z-index:9999;background:#111827;color:#fff;border:none;border-radius:999px;width:48px;height:48px;font-size:20px;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+body.cw-imgmode .cw-imgok{outline:2px dashed rgba(245,158,11,.75);outline-offset:-2px;cursor:copy}
+body.cw-imgmode .cw-imgok:hover{outline:3px dashed #F59E0B}
+</style>
+
+<div class="cw-bar cw-hide" data-cw-editor id="cwBar">
+  <h5>Page editor — private (Ctrl+Shift+E)</h5>
+  <div class="cw-row">
+    <button class="cw-btn" id="cwEdit">✎ Text: OFF</button>
+    <button class="cw-btn" id="cwImg">🖼 Images: OFF</button>
+  </div>
+  <div class="cw-row">
+    <button class="cw-btn" id="cwSeo">SEO</button>
+    <button class="cw-btn" id="cwMin" style="flex:0 0 auto">—</button>
+  </div>
+  <div id="cwSeoPanel" class="cw-hide">
+    <input class="cw-field" id="cwTitle" placeholder="Browser tab title (SEO)">
+    <textarea class="cw-field" id="cwDesc" rows="3" placeholder="Meta description (SEO)"></textarea>
+  </div>
+  <div class="cw-row" title="Theme">
+    <button class="cw-swatch" data-theme="taqueria" style="background:linear-gradient(135deg,#1E3A2F 50%,#C4532D 50%)"></button>
+    <button class="cw-swatch" data-theme="ocean" style="background:linear-gradient(135deg,#12303F 50%,#1E7FA6 50%)"></button>
+    <button class="cw-swatch" data-theme="barber" style="background:linear-gradient(135deg,#1C2733 50%,#B08D57 50%)"></button>
+    <button class="cw-swatch" data-theme="rose" style="background:linear-gradient(135deg,#3A1E33 50%,#C24A6B 50%)"></button>
+    <button class="cw-swatch" data-theme="forest" style="background:linear-gradient(135deg,#233A22 50%,#7A9E3B 50%)"></button>
+    <span style="font-size:11px;color:#9CA3AF">theme</span>
+  </div>
+  <div class="cw-row">
+    <button class="cw-btn dl" id="cwDl">⬇ Download clean HTML</button>
+  </div>
+  <p class="cw-tip">Text ON: click any text and type. Images ON: click a dashed placeholder to insert a photo (Shift+click sets any element's background). Download saves the finished page with the editor removed — safe to send to clients.</p>
+</div>
+<button class="cw-min cw-hide" data-cw-editor id="cwRestore" title="Open editor">✎</button>
+<input type="file" accept="image/*" id="cwFile" class="cw-hide" data-cw-editor>
+
+<script data-cw-editor>
+(function(){
+  var bar = document.getElementById('cwBar'), restore = document.getElementById('cwRestore');
+
+  // ---- private visibility: hidden unless Ctrl+Shift+E or #editor in URL ----
+  function openEditor(){ bar.classList.remove('cw-hide'); restore.classList.add('cw-hide'); }
+  function closeEditor(){ bar.classList.add('cw-hide'); restore.classList.add('cw-hide'); }
+  if (/editor/i.test(location.hash)) openEditor();
+  document.addEventListener('keydown', function(e){
+    if (e.ctrlKey && e.shiftKey && (e.key === 'E' || e.key === 'e')) {
+      e.preventDefault();
+      (bar.classList.contains('cw-hide') && restore.classList.contains('cw-hide')) ? openEditor() : closeEditor();
+    }
+  });
+
+  // ---- text editing ----
+  var editing = false, btn = document.getElementById('cwEdit');
+  btn.onclick = function(){
+    editing = !editing;
+    document.body.contentEditable = editing ? 'true' : 'false';
+    document.body.classList.toggle('cw-editing', editing);
+    btn.textContent = '✎ Text: ' + (editing ? 'ON' : 'OFF');
+    btn.classList.toggle('on', editing);
+  };
+  document.querySelectorAll('[data-cw-editor]').forEach(function(el){ el.contentEditable = 'false'; });
+
+  // ---- image mode ----
+  var imgMode = false, imgBtn = document.getElementById('cwImg'), fileInput = document.getElementById('cwFile'), pending = null;
+  imgBtn.onclick = function(){
+    imgMode = !imgMode;
+    document.body.classList.toggle('cw-imgmode', imgMode);
+    imgBtn.textContent = '🖼 Images: ' + (imgMode ? 'ON' : 'OFF');
+    imgBtn.classList.toggle('on', imgMode);
+    if (imgMode) document.querySelectorAll('.ph, .w, .p1, .p2, .p3, .p4, .plank, .ba, .cake-emoji').forEach(function(el){ el.classList.add('cw-imgok'); });
+  };
+  fileInput.onchange = function(){
+    var f = this.files[0];
+    if (!f || !pending) return;
+    var r = new FileReader();
+    r.onload = function(){
+      pending.style.background = 'url(' + r.result + ') center / cover no-repeat';
+      pending = null;
+    };
+    r.readAsDataURL(f);
+    this.value = '';
+  };
+
+  // ---- clicks: block link nav while editing; route image-mode clicks ----
+  document.addEventListener('click', function(e){
+    if (e.target.closest('[data-cw-editor]')) return;
+    if (imgMode) {
+      var t = e.target.closest('.cw-imgok');
+      if (!t && e.shiftKey) t = e.target;
+      if (t) { e.preventDefault(); e.stopPropagation(); pending = t; fileInput.click(); return; }
+    }
+    if (editing && e.target.closest('a')) e.preventDefault();
+  }, true);
+
+  // ---- SEO panel ----
+  var seoPanel = document.getElementById('cwSeoPanel');
+  var t = document.getElementById('cwTitle'), d = document.getElementById('cwDesc');
+  var metaDesc = document.querySelector('meta[name="description"]');
+  t.value = document.title; d.value = metaDesc ? metaDesc.content : '';
+  document.getElementById('cwSeo').onclick = function(){ seoPanel.classList.toggle('cw-hide'); };
+  t.oninput = function(){ document.title = t.value; };
+  d.oninput = function(){ if (metaDesc) metaDesc.content = d.value; };
+
+  // ---- themes ----
+  var themes = {
+    taqueria: {'--cream':'#FAF4E8','--cream2':'#F3EAD7','--terra':'#C4532D','--terra-dark':'#A03E1E','--green':'#1E3A2F','--green-soft':'#2C5243','--gold':'#E0A458'},
+    ocean:    {'--cream':'#F4F8F9','--cream2':'#E8F0F2','--terra':'#1E7FA6','--terra-dark':'#166384','--green':'#12303F','--green-soft':'#1D4557','--gold':'#5FB6D9'},
+    barber:   {'--cream':'#F7F5F0','--cream2':'#EDEAE1','--terra':'#B08D57','--terra-dark':'#8F7245','--green':'#1C2733','--green-soft':'#2A3A4A','--gold':'#D8B77E'},
+    rose:     {'--cream':'#FBF4F6','--cream2':'#F4E7EC','--terra':'#C24A6B','--terra-dark':'#A03A57','--green':'#3A1E33','--green-soft':'#54304B','--gold':'#E39CB3'},
+    forest:   {'--cream':'#F7F8F1','--cream2':'#ECEFDE','--terra':'#7A9E3B','--terra-dark':'#5F7D2C','--green':'#233A22','--green-soft':'#345233','--gold':'#B7CE6E'}
+  };
+  document.querySelectorAll('.cw-swatch').forEach(function(s){
+    s.onclick = function(){
+      var vars = themes[s.dataset.theme];
+      for (var k in vars) document.documentElement.style.setProperty(k, vars[k]);
+    };
+  });
+
+  // ---- minimize / restore ----
+  document.getElementById('cwMin').onclick = function(){ bar.classList.add('cw-hide'); restore.classList.remove('cw-hide'); };
+  restore.onclick = function(){ bar.classList.remove('cw-hide'); restore.classList.add('cw-hide'); };
+
+  // ---- clean export ----
+  document.getElementById('cwDl').onclick = function(){
+    var wasEditing = editing;
+    if (wasEditing) btn.onclick();
+    if (imgMode) imgBtn.onclick();
+    var clone = document.documentElement.cloneNode(true);
+    clone.querySelectorAll('[data-cw-editor]').forEach(function(el){ el.remove(); });
+    clone.querySelectorAll('[contenteditable]').forEach(function(el){ el.removeAttribute('contenteditable'); });
+    clone.querySelectorAll('.cw-imgok').forEach(function(el){ el.classList.remove('cw-imgok'); });
+    var body = clone.querySelector('body');
+    body.classList.remove('cw-editing','cw-imgmode');
+    body.removeAttribute('contenteditable');
+    var html = '<!DOCTYPE html>\n' + clone.outerHTML;
+    var blob = new Blob([html], {type:'text/html'});
+    var a = document.createElement('a');
+    var name = (document.title.split('|')[0] || 'landing-page').trim().toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+    a.href = URL.createObjectURL(blob);
+    a.download = (name || 'landing-page') + '.html';
+    document.body.appendChild(a); a.click(); a.remove();
+    if (wasEditing) btn.onclick();
+  };
+})();
+</script>
+
+</body>
+</html>

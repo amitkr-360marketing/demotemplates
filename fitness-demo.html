@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ironline Strength & Conditioning | Personal Training in Santa Barbara</title>
+<meta name="description" content="Ironline Strength & Conditioning — personal training, small-group classes and nutrition coaching in Santa Barbara. First session free. Real coaching, real results.">
+<link rel="canonical" href="https://www.ironlinesb.com/">
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Ironline Strength & Conditioning — Santa Barbara">
+<meta property="og:description" content="Real coaching, real results. First session free.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#101014">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ExerciseGym",
+  "name": "Ironline Strength & Conditioning",
+  "description": "Personal training, small-group strength classes and nutrition coaching in Santa Barbara, California.",
+  "address": {"@type": "PostalAddress","addressLocality": "Santa Barbara","addressRegion": "CA","addressCountry": "US"},
+  "priceRange": "$$"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,700;0,900;1,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#101014; --cream2:#17171D;
+  --terra:#FF4D2E; --terra-dark:#DB3517;
+  --green:#F4F2ED; --green-soft:#B9B6AD;
+  --gold:#FFB88C; --ink:#F4F2ED; --ink-soft:#8E8C86;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,.disp{font-family:'Archivo',sans-serif}
+a{color:inherit}
+.wrap{width:100%;max-width:1140px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:17px 34px;border-radius:8px;font-weight:800;font-size:15px;letter-spacing:1px;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;transition:all .15s;font-family:'Archivo',sans-serif}
+.btn-fire{background:var(--terra);color:#fff;box-shadow:0 12px 32px rgba(255,77,46,.35)}
+.btn-fire:hover{background:var(--terra-dark);transform:translateY(-2px)}
+.btn-line{background:transparent;color:var(--ink);border:2px solid #33333B}
+.btn-line:hover{border-color:var(--ink)}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* nav */
+.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font-family:'Archivo',sans-serif;font-weight:900;font-size:21px;letter-spacing:1px;font-style:italic}
+.logo span{color:var(--terra)}
+.nv{display:flex;gap:26px;font-size:13.5px;letter-spacing:1.5px;text-transform:uppercase;font-weight:700}
+.nv a{text-decoration:none;color:var(--ink-soft)}
+.nv a:hover{color:var(--terra)}
+.nv .tr{color:var(--terra)}
+
+/* hero */
+.hero{position:relative;padding:70px 0 90px;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-20%;right:-16%;width:66%;height:150%;background:linear-gradient(210deg,rgba(255,77,46,.28),rgba(255,77,46,.02) 60%);transform:skewX(-14deg);pointer-events:none}
+.hero::after{content:"IRONLINE";position:absolute;bottom:-38px;left:0;right:0;font-family:'Archivo',sans-serif;font-weight:900;font-size:180px;letter-spacing:8px;color:rgba(244,242,237,.03);white-space:nowrap;pointer-events:none;line-height:1}
+.hgrid{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.tagline{display:inline-flex;align-items:center;gap:10px;font-size:13px;letter-spacing:3px;text-transform:uppercase;font-weight:700;color:var(--terra);margin-bottom:22px}
+.tagline::before{content:"";width:34px;height:3px;background:var(--terra)}
+.hero h1{font-size:clamp(46px,6.6vw,84px);font-weight:900;line-height:.98;text-transform:uppercase;font-style:italic;letter-spacing:-1px}
+.hero h1 span{color:transparent;-webkit-text-stroke:2px var(--terra)}
+.hero p{margin-top:24px;font-size:17.5px;color:var(--ink-soft);max-width:460px}
+.hero .ctas{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap}
+.hero .note{margin-top:18px;font-size:13.5px;color:var(--ink-soft)}
+.hero .note b{color:var(--gold)}
+
+/* stat card */
+.statcard{background:var(--cream2);border:1px solid #26262E;border-radius:20px;padding:38px 34px;position:relative;z-index:2}
+.statcard h3{font-size:14px;letter-spacing:2.5px;text-transform:uppercase;color:var(--ink-soft);margin-bottom:26px;font-family:'Inter',sans-serif;font-weight:700}
+.stat{display:flex;align-items:baseline;gap:12px;padding:16px 0;border-bottom:1px solid #26262E}
+.stat:last-child{border:none}
+.stat .n{font-family:'Archivo',sans-serif;font-weight:900;font-size:44px;color:var(--terra);font-style:italic;min-width:130px}
+.stat .l{font-size:14.5px;color:var(--green-soft);font-weight:500}
+
+/* programs */
+section{padding:92px 0}
+.k{font-size:12.5px;letter-spacing:3px;text-transform:uppercase;font-weight:800;color:var(--terra);margin-bottom:14px}
+.h2{font-family:'Archivo',sans-serif;font-size:clamp(34px,4.6vw,56px);font-weight:900;line-height:1.02;text-transform:uppercase;font-style:italic;letter-spacing:-.5px}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:50px}
+.pc{background:var(--cream2);border:1px solid #26262E;border-radius:18px;padding:34px 30px;position:relative;overflow:hidden;transition:all .2s}
+.pc::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--terra),var(--gold));transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.pc:hover{transform:translateY(-6px);border-color:#3A3A44}
+.pc:hover::before{transform:scaleX(1)}
+.pc .num{font-family:'Archivo',sans-serif;font-weight:900;font-size:15px;color:var(--ink-soft);letter-spacing:2px}
+.pc h3{font-size:23px;font-weight:900;text-transform:uppercase;font-style:italic;margin:12px 0 10px}
+.pc p{font-size:14.8px;color:var(--ink-soft)}
+.pc .pr{margin-top:20px;font-family:'Archivo',sans-serif;font-weight:900;font-size:19px;color:var(--gold)}
+.pc .pr small{font-size:12px;color:var(--ink-soft);font-weight:500;font-family:'Inter',sans-serif}
+
+/* method strip */
+.method{background:var(--terra);color:#160906;padding:80px 0}
+.method .h2{color:#160906}
+.mrow{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:48px}
+.mi b{display:block;font-family:'Archivo',sans-serif;font-weight:900;font-size:19px;text-transform:uppercase;font-style:italic;margin-bottom:6px}
+.mi p{font-size:14.5px;font-weight:500;color:rgba(22,9,6,.75)}
+.mi .step{font-family:'Archivo',sans-serif;font-weight:900;font-size:40px;color:rgba(22,9,6,.25);line-height:1;margin-bottom:12px}
+
+/* results */
+.res-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:50px}
+.rv{background:var(--cream2);border:1px solid #26262E;border-radius:18px;padding:32px 30px}
+.rv .st{color:var(--gold);letter-spacing:3px;margin-bottom:14px}
+.rv p{font-size:16px;font-style:italic;color:var(--green)}
+.rv .w{margin-top:16px;font-size:12.5px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--ink-soft)}
+
+/* schedule */
+.sched{margin-top:50px;border:1px solid #26262E;border-radius:18px;overflow:hidden}
+.srow2{display:grid;grid-template-columns:1fr 1.2fr 1fr .8fr;padding:18px 26px;border-bottom:1px solid #26262E;font-size:15px;align-items:center}
+.srow2:last-child{border:none}
+.srow2.head{background:var(--cream2);font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--ink-soft)}
+.srow2 b{font-family:'Archivo',sans-serif;font-weight:900;font-style:italic;text-transform:uppercase}
+.srow2 .spots{color:var(--gold);font-weight:600;font-size:13.5px}
+
+/* cta */
+.final{padding:0 24px 90px}
+.fcard{max-width:1140px;margin:0 auto;background:linear-gradient(120deg,var(--cream2),#1D1D25);border:1px solid #26262E;border-radius:26px;padding:70px 60px;text-align:center;position:relative;overflow:hidden}
+.fcard::before{content:"";position:absolute;left:-10%;top:-40%;width:50%;height:180%;background:linear-gradient(210deg,rgba(255,77,46,.16),transparent 70%);transform:skewX(-14deg)}
+.fcard .h2{position:relative}
+.fcard p{position:relative;margin:18px auto 32px;max-width:480px;color:var(--ink-soft);font-size:16.5px}
+.fcard .btn{position:relative}
+
+footer{padding:44px 0;text-align:center;color:var(--ink-soft);font-size:13.5px;border-top:1px solid #26262E}
+footer .fl{font-family:'Archivo',sans-serif;font-weight:900;font-style:italic;font-size:19px;color:var(--ink);letter-spacing:1px}
+footer .fl span{color:var(--terra)}
+footer .concept{margin-top:14px;font-size:12px;color:#55555E}
+
+@media(max-width:920px){
+  .hgrid{grid-template-columns:1fr}
+  .pgrid{grid-template-columns:1fr}
+  .mrow,.res-grid{grid-template-columns:1fr 1fr}
+  .nv{display:none}
+  .srow2{grid-template-columns:1fr 1fr;gap:6px}
+  .hero::after{font-size:90px}
+}
+@media(max-width:600px){.mrow,.res-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <nav class="nav" aria-label="Main">
+    <div class="logo">IRON<span>LINE</span></div>
+    <div class="nv">
+      <a href="#programs">Programs</a>
+      <a href="#results">Results</a>
+      <a href="#schedule">Schedule</a>
+      <a class="tr" href="#start">Free first session</a>
+    </div>
+  </nav>
+</div>
+
+<header class="hero">
+  <div class="wrap hgrid">
+    <div>
+      <div class="tagline">Strength · Conditioning · Nutrition</div>
+      <h1>Stronger has a <span>starting line.</span></h1>
+      <p>Personal training and small-group coaching in Santa Barbara — programmed for your body, tracked every week, and built around a simple promise: you will not be guessing.</p>
+      <div class="ctas">
+        <a class="btn btn-fire" href="#start">Claim your free session</a>
+        <a class="btn btn-line" href="#programs">See programs</a>
+      </div>
+      <p class="note"><b>No contracts.</b> Month to month, earn-your-trust coaching.</p>
+    </div>
+    <aside class="statcard reveal" aria-label="Results">
+      <h3>The numbers we're proud of</h3>
+      <div class="stat"><span class="n"><span class="count" data-to="340">0</span>+</span><span class="l">clients coached since 2018</span></div>
+      <div class="stat"><span class="n"><span class="count" data-to="92">0</span>%</span><span class="l">still training after 6 months</span></div>
+      <div class="stat"><span class="n"><span class="count" data-to="12">0</span></span><span class="l">max athletes per class — ever</span></div>
+    </aside>
+  </div>
+</header>
+
+<section id="programs">
+  <div class="wrap">
+    <div class="k reveal">Programs</div>
+    <h2 class="h2 reveal">Pick your fight.</h2>
+    <div class="pgrid">
+      <div class="pc reveal"><div class="num">01</div><h3>1-on-1 Coaching</h3><p>Fully personalized programming, weekly check-ins, nutrition targets and form coaching every single rep.</p><div class="pr">$85 <small>/ session · sample price</small></div></div>
+      <div class="pc reveal"><div class="num">02</div><h3>Small-Group Strength</h3><p>Max 12 athletes. Coached barbell + conditioning classes that scale to any level — beginners welcome, egos checked at the door.</p><div class="pr">$189 <small>/ month · sample price</small></div></div>
+      <div class="pc reveal"><div class="num">03</div><h3>Online Coaching</h3><p>Your program in your pocket. Video form reviews, weekly adjustments and a coach who actually answers.</p><div class="pr">$129 <small>/ month · sample price</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="method" style="padding:80px 0">
+  <div class="wrap">
+    <div class="k reveal" style="color:#160906">The Ironline method</div>
+    <h2 class="h2 reveal">No guesswork. Ever.</h2>
+    <div class="mrow">
+      <div class="mi reveal"><div class="step">01</div><b>Assess</b><p>Movement screen + strength baseline in your free first session.</p></div>
+      <div class="mi reveal"><div class="step">02</div><b>Program</b><p>A plan built for your body, your schedule and your goal — not a template.</p></div>
+      <div class="mi reveal"><div class="step">03</div><b>Track</b><p>Every lift logged. You'll see the graph climb week over week.</p></div>
+      <div class="mi reveal"><div class="step">04</div><b>Adjust</b><p>Plateaus get caught in days, not months. That's what coaching is.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="results">
+  <div class="wrap">
+    <div class="k reveal">Results</div>
+    <h2 class="h2 reveal">Said by real members.</h2>
+    <div class="res-grid">
+      <div class="rv reveal"><div class="st">★★★★★</div><p>"Two years of YouTube workouts got me nowhere. Six months here and I deadlifted double bodyweight. Coaching is simply different."</p><div class="w">— Member review</div></div>
+      <div class="rv reveal"><div class="st">★★★★★</div><p>"I was terrified of gyms. The small classes changed everything — nobody performs, everybody works. Down 14kg and staying."</p><div class="w">— Member review</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="schedule" style="padding-top:0">
+  <div class="wrap">
+    <div class="k reveal">This week</div>
+    <h2 class="h2 reveal">Class schedule.</h2>
+    <div class="sched reveal">
+      <div class="srow2 head"><span>Time</span><span>Class</span><span>Coach</span><span>Spots</span></div>
+      <div class="srow2"><span>6:00 AM</span><b>Strength Foundations</b><span>Coach A.</span><span class="spots">3 left</span></div>
+      <div class="srow2"><span>7:15 AM</span><b>Conditioning</b><span>Coach M.</span><span class="spots">6 left</span></div>
+      <div class="srow2"><span>12:00 PM</span><b>Lunch Express (45m)</b><span>Coach A.</span><span class="spots">4 left</span></div>
+      <div class="srow2"><span>5:30 PM</span><b>Barbell Club</b><span>Coach R.</span><span class="spots">2 left</span></div>
+      <div class="srow2"><span>6:45 PM</span><b>Strength Foundations</b><span>Coach M.</span><span class="spots">5 left</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="final" id="start">
+  <div class="fcard reveal">
+    <h2 class="h2">First session free. Zero pressure.</h2>
+    <p>Come in, move, get assessed, meet the coaches. If it's not for you, you'll still leave with a plan you can use anywhere.</p>
+    <a class="btn btn-fire" href="tel:+18055551234">Book my free session</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="fl">IRON<span>LINE</span></div>
+    <div>Strength &amp; Conditioning · Santa Barbara, CA · [address]</div>
+    <div class="concept">Concept design — [Your Name], Santa Barbara web design · [phone] · [portfolio]</div>
+  </div>
+</footer>
+
+<script>
+// scroll reveal
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+// animated counters
+const cio = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  const el = e.target, to = +el.dataset.to, dur = 1400, t0 = performance.now();
+  (function tick(t){ const p = Math.min((t - t0) / dur, 1); el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(tick); })(t0);
+  cio.unobserve(el);
+}), {threshold:.5});
+document.querySelectorAll('.count').forEach(el => cio.observe(el));
+</script>
+
+<!-- ============ MOTION PACK (kept in downloaded pages) ============ -->
+<style data-cw-motion>
+@media (prefers-reduced-motion: no-preference) {
+  /* scroll progress bar */
+  .cw-prog{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--terra,#C0392B),var(--gold,#E0A458));z-index:9998;transition:width .12s linear;border-radius:0 3px 3px 0}
+  /* ambient floating orb in hero */
+  .hero{position:relative}
+  .cw-orb{position:absolute;top:8%;right:6%;width:44vmin;height:44vmin;border-radius:50%;pointer-events:none;z-index:0;
+    background:radial-gradient(circle at 40% 40%, var(--gold,#E0A458), transparent 62%);
+    opacity:.2;filter:blur(58px);animation:cwFloat 12s ease-in-out infinite alternate}
+  @keyframes cwFloat{
+    0%{transform:translate(0,0) scale(1)}
+    50%{transform:translate(-7vmin,5vmin) scale(1.12)}
+    100%{transform:translate(4vmin,-4vmin) scale(.94)}
+  }
+  /* hero entrance stagger (only on pages whose hero isn't already reveal-animated) */
+  body.cw-hero:not(.cw-in) .hero h1,
+  body.cw-hero:not(.cw-in) .hero p,
+  body.cw-hero:not(.cw-in) .hero .ctas,
+  body.cw-hero:not(.cw-in) .hero .hero-ctas,
+  body.cw-hero:not(.cw-in) .hero .proof,
+  body.cw-hero:not(.cw-in) .hero .eyebrow,
+  body.cw-hero:not(.cw-in) .hero .kicker,
+  body.cw-hero:not(.cw-in) .hero .tagline,
+  body.cw-hero:not(.cw-in) .hero .over,
+  body.cw-hero:not(.cw-in) .hero .since,
+  body.cw-hero:not(.cw-in) .hero .pill{opacity:0}
+  @keyframes cwUp{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:translateY(0)}}
+  body.cw-hero.cw-in .hero .eyebrow, body.cw-hero.cw-in .hero .kicker, body.cw-hero.cw-in .hero .tagline,
+  body.cw-hero.cw-in .hero .over, body.cw-hero.cw-in .hero .since, body.cw-hero.cw-in .hero .pill{animation:cwUp .7s cubic-bezier(.2,.7,.2,1) both}
+  body.cw-hero.cw-in .hero h1{animation:cwUp .9s cubic-bezier(.2,.7,.2,1) .12s both}
+  body.cw-hero.cw-in .hero p{animation:cwUp .9s cubic-bezier(.2,.7,.2,1) .26s both}
+  body.cw-hero.cw-in .hero .ctas, body.cw-hero.cw-in .hero .hero-ctas{animation:cwUp .9s cubic-bezier(.2,.7,.2,1) .4s both}
+  body.cw-hero.cw-in .hero .proof{animation:cwUp .9s cubic-bezier(.2,.7,.2,1) .54s both}
+  /* button shine sweep */
+  .btn{position:relative;overflow:hidden}
+  .btn::after{content:"";position:absolute;top:0;left:-90%;width:55%;height:100%;
+    background:linear-gradient(105deg,transparent,rgba(255,255,255,.4),transparent);
+    transform:skewX(-20deg);transition:left .55s ease;pointer-events:none}
+  .btn:hover::after{left:140%}
+  /* auto-reveal for pages without their own */
+  .cw-r{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+  .cw-r.cw-rin{opacity:1;transform:none}
+}
+</style>
+<script data-cw-motion>
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  // hero entrance (skip if this page's hero already animates itself via .reveal)
+  var hero = document.querySelector('.hero');
+  if (hero && !hero.querySelector('h1.reveal')) document.body.classList.add('cw-hero');
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){ document.body.classList.add('cw-in'); }); });
+
+  // ambient orb
+  if (hero) { var orb = document.createElement('div'); orb.className = 'cw-orb'; orb.setAttribute('aria-hidden','true'); hero.appendChild(orb); }
+
+  // scroll progress bar
+  var prog = document.createElement('div'); prog.className = 'cw-prog'; document.body.appendChild(prog);
+  var doc = document.documentElement;
+  addEventListener('scroll', function(){
+    var max = doc.scrollHeight - innerHeight;
+    prog.style.width = (max > 0 ? (scrollY / max) * 100 : 0) + '%';
+  }, {passive:true});
+
+  // auto scroll-reveal for templates that don't ship their own
+  if (!document.querySelector('.reveal')) {
+    var targets = document.querySelectorAll('section .wrap > *:not(script):not(style), .final > *');
+    var vh = innerHeight;
+    targets.forEach(function(el){ if (el.getBoundingClientRect().top > vh * 0.9) el.classList.add('cw-r'); });
+    var io2 = new IntersectionObserver(function(es){ es.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('cw-rin'); io2.unobserve(e.target); }
+    }); }, {threshold:.1});
+    document.querySelectorAll('.cw-r').forEach(function(el){ io2.observe(el); });
+  }
+})();
+</script>
+
+<!-- ================= EDITOR (private — press Ctrl+Shift+E, or open the file with #editor added to the address) ================= -->
+<style data-cw-editor>
+.cw-bar{position:fixed;bottom:22px;right:22px;z-index:9999;background:#111827;color:#F9FAFB;border-radius:18px;box-shadow:0 16px 50px rgba(0,0,0,.45);padding:14px 16px;font-family:'Inter',system-ui,sans-serif;font-size:13px;width:280px}
+.cw-bar h5{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#9CA3AF;margin:0 0 10px;font-family:'Inter',sans-serif}
+.cw-row{display:flex;gap:8px;align-items:center;margin-bottom:10px;flex-wrap:wrap}
+.cw-btn{flex:1;background:#374151;color:#fff;border:none;border-radius:10px;padding:10px 12px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit}
+.cw-btn:hover{background:#4B5563}
+.cw-btn.on{background:#059669}
+.cw-btn.dl{background:#C4532D;flex:2}
+.cw-btn.dl:hover{background:#A03E1E}
+.cw-swatch{width:26px;height:26px;border-radius:50%;border:2px solid rgba(255,255,255,.25);cursor:pointer;padding:0}
+.cw-swatch:hover{border-color:#fff}
+.cw-field{width:100%;background:#1F2937;color:#F9FAFB;border:1px solid #374151;border-radius:8px;padding:8px 10px;font-size:12.5px;margin-bottom:8px;font-family:inherit;box-sizing:border-box}
+.cw-tip{font-size:11.5px;color:#9CA3AF;line-height:1.45;margin:2px 0 0}
+.cw-hide{display:none !important}
+body.cw-editing [contenteditable]:hover{outline:2px dashed #059669;outline-offset:2px}
+body.cw-editing{caret-color:#059669}
+.cw-min{position:fixed;bottom:22px;right:22px;z-index:9999;background:#111827;color:#fff;border:none;border-radius:999px;width:48px;height:48px;font-size:20px;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+body.cw-imgmode .cw-imgok{outline:2px dashed rgba(245,158,11,.75);outline-offset:-2px;cursor:copy}
+body.cw-imgmode .cw-imgok:hover{outline:3px dashed #F59E0B}
+</style>
+
+<div class="cw-bar cw-hide" data-cw-editor id="cwBar">
+  <h5>Page editor — private (Ctrl+Shift+E)</h5>
+  <div class="cw-row">
+    <button class="cw-btn" id="cwEdit">✎ Text: OFF</button>
+    <button class="cw-btn" id="cwImg">🖼 Images: OFF</button>
+  </div>
+  <div class="cw-row">
+    <button class="cw-btn" id="cwSeo">SEO</button>
+    <button class="cw-btn" id="cwMin" style="flex:0 0 auto">—</button>
+  </div>
+  <div id="cwSeoPanel" class="cw-hide">
+    <input class="cw-field" id="cwTitle" placeholder="Browser tab title (SEO)">
+    <textarea class="cw-field" id="cwDesc" rows="3" placeholder="Meta description (SEO)"></textarea>
+  </div>
+  <div class="cw-row" title="Theme">
+    <button class="cw-swatch" data-theme="taqueria" style="background:linear-gradient(135deg,#1E3A2F 50%,#C4532D 50%)"></button>
+    <button class="cw-swatch" data-theme="ocean" style="background:linear-gradient(135deg,#12303F 50%,#1E7FA6 50%)"></button>
+    <button class="cw-swatch" data-theme="barber" style="background:linear-gradient(135deg,#1C2733 50%,#B08D57 50%)"></button>
+    <button class="cw-swatch" data-theme="rose" style="background:linear-gradient(135deg,#3A1E33 50%,#C24A6B 50%)"></button>
+    <button class="cw-swatch" data-theme="forest" style="background:linear-gradient(135deg,#233A22 50%,#7A9E3B 50%)"></button>
+    <span style="font-size:11px;color:#9CA3AF">theme</span>
+  </div>
+  <div class="cw-row">
+    <button class="cw-btn dl" id="cwDl">⬇ Download clean HTML</button>
+  </div>
+  <p class="cw-tip">Text ON: click any text and type. Images ON: click a dashed placeholder to insert a photo (Shift+click sets any element's background). Download saves the finished page with the editor removed — safe to send to clients.</p>
+</div>
+<button class="cw-min cw-hide" data-cw-editor id="cwRestore" title="Open editor">✎</button>
+<input type="file" accept="image/*" id="cwFile" class="cw-hide" data-cw-editor>
+
+<script data-cw-editor>
+(function(){
+  var bar = document.getElementById('cwBar'), restore = document.getElementById('cwRestore');
+
+  // ---- private visibility: hidden unless Ctrl+Shift+E or #editor in URL ----
+  function openEditor(){ bar.classList.remove('cw-hide'); restore.classList.add('cw-hide'); }
+  function closeEditor(){ bar.classList.add('cw-hide'); restore.classList.add('cw-hide'); }
+  if (/editor/i.test(location.hash)) openEditor();
+  document.addEventListener('keydown', function(e){
+    if (e.ctrlKey && e.shiftKey && (e.key === 'E' || e.key === 'e')) {
+      e.preventDefault();
+      (bar.classList.contains('cw-hide') && restore.classList.contains('cw-hide')) ? openEditor() : closeEditor();
+    }
+  });
+
+  // ---- text editing ----
+  var editing = false, btn = document.getElementById('cwEdit');
+  btn.onclick = function(){
+    editing = !editing;
+    document.body.contentEditable = editing ? 'true' : 'false';
+    document.body.classList.toggle('cw-editing', editing);
+    btn.textContent = '✎ Text: ' + (editing ? 'ON' : 'OFF');
+    btn.classList.toggle('on', editing);
+  };
+  document.querySelectorAll('[data-cw-editor]').forEach(function(el){ el.contentEditable = 'false'; });
+
+  // ---- image mode ----
+  var imgMode = false, imgBtn = document.getElementById('cwImg'), fileInput = document.getElementById('cwFile'), pending = null;
+  imgBtn.onclick = function(){
+    imgMode = !imgMode;
+    document.body.classList.toggle('cw-imgmode', imgMode);
+    imgBtn.textContent = '🖼 Images: ' + (imgMode ? 'ON' : 'OFF');
+    imgBtn.classList.toggle('on', imgMode);
+    if (imgMode) document.querySelectorAll('.ph, .w, .p1, .p2, .p3, .p4, .plank, .ba, .cake-emoji').forEach(function(el){ el.classList.add('cw-imgok'); });
+  };
+  fileInput.onchange = function(){
+    var f = this.files[0];
+    if (!f || !pending) return;
+    var r = new FileReader();
+    r.onload = function(){
+      pending.style.background = 'url(' + r.result + ') center / cover no-repeat';
+      pending = null;
+    };
+    r.readAsDataURL(f);
+    this.value = '';
+  };
+
+  // ---- clicks: block link nav while editing; route image-mode clicks ----
+  document.addEventListener('click', function(e){
+    if (e.target.closest('[data-cw-editor]')) return;
+    if (imgMode) {
+      var t = e.target.closest('.cw-imgok');
+      if (!t && e.shiftKey) t = e.target;
+      if (t) { e.preventDefault(); e.stopPropagation(); pending = t; fileInput.click(); return; }
+    }
+    if (editing && e.target.closest('a')) e.preventDefault();
+  }, true);
+
+  // ---- SEO panel ----
+  var seoPanel = document.getElementById('cwSeoPanel');
+  var t = document.getElementById('cwTitle'), d = document.getElementById('cwDesc');
+  var metaDesc = document.querySelector('meta[name="description"]');
+  t.value = document.title; d.value = metaDesc ? metaDesc.content : '';
+  document.getElementById('cwSeo').onclick = function(){ seoPanel.classList.toggle('cw-hide'); };
+  t.oninput = function(){ document.title = t.value; };
+  d.oninput = function(){ if (metaDesc) metaDesc.content = d.value; };
+
+  // ---- themes ----
+  var themes = {
+    taqueria: {'--cream':'#FAF4E8','--cream2':'#F3EAD7','--terra':'#C4532D','--terra-dark':'#A03E1E','--green':'#1E3A2F','--green-soft':'#2C5243','--gold':'#E0A458'},
+    ocean:    {'--cream':'#F4F8F9','--cream2':'#E8F0F2','--terra':'#1E7FA6','--terra-dark':'#166384','--green':'#12303F','--green-soft':'#1D4557','--gold':'#5FB6D9'},
+    barber:   {'--cream':'#F7F5F0','--cream2':'#EDEAE1','--terra':'#B08D57','--terra-dark':'#8F7245','--green':'#1C2733','--green-soft':'#2A3A4A','--gold':'#D8B77E'},
+    rose:     {'--cream':'#FBF4F6','--cream2':'#F4E7EC','--terra':'#C24A6B','--terra-dark':'#A03A57','--green':'#3A1E33','--green-soft':'#54304B','--gold':'#E39CB3'},
+    forest:   {'--cream':'#F7F8F1','--cream2':'#ECEFDE','--terra':'#7A9E3B','--terra-dark':'#5F7D2C','--green':'#233A22','--green-soft':'#345233','--gold':'#B7CE6E'}
+  };
+  document.querySelectorAll('.cw-swatch').forEach(function(s){
+    s.onclick = function(){
+      var vars = themes[s.dataset.theme];
+      for (var k in vars) document.documentElement.style.setProperty(k, vars[k]);
+    };
+  });
+
+  // ---- minimize / restore ----
+  document.getElementById('cwMin').onclick = function(){ bar.classList.add('cw-hide'); restore.classList.remove('cw-hide'); };
+  restore.onclick = function(){ bar.classList.remove('cw-hide'); restore.classList.add('cw-hide'); };
+
+  // ---- clean export ----
+  document.getElementById('cwDl').onclick = function(){
+    var wasEditing = editing;
+    if (wasEditing) btn.onclick();
+    if (imgMode) imgBtn.onclick();
+    var clone = document.documentElement.cloneNode(true);
+    clone.querySelectorAll('[data-cw-editor]').forEach(function(el){ el.remove(); });
+    clone.querySelectorAll('[contenteditable]').forEach(function(el){ el.removeAttribute('contenteditable'); });
+    clone.querySelectorAll('.cw-imgok').forEach(function(el){ el.classList.remove('cw-imgok'); });
+    var body = clone.querySelector('body');
+    body.classList.remove('cw-editing','cw-imgmode');
+    body.removeAttribute('contenteditable');
+    var html = '<!DOCTYPE html>\n' + clone.outerHTML;
+    var blob = new Blob([html], {type:'text/html'});
+    var a = document.createElement('a');
+    var name = (document.title.split('|')[0] || 'landing-page').trim().toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+    a.href = URL.createObjectURL(blob);
+    a.download = (name || 'landing-page') + '.html';
+    document.body.appendChild(a); a.click(); a.remove();
+    if (wasEditing) btn.onclick();
+  };
+})();
+</script>
+
+</body>
+</html>
